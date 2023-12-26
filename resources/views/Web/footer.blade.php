@@ -9,8 +9,7 @@
                         <h4>Giới thiệu</h4>
                     </div>
                     <div class="footer-static-content">
-                        <p>Trường Đức đem tiện nghi đến ngôi nhà của bạn,
-                            bản quyền thuộc công ty cổ phần kĩ thuật điện và viễn thông Trường Đức</p>
+                        <p>Chợ nông sản Việt. Dành cho người Việt</p>
                     </div>
                     <div class="contact-add">
                         <ul>
@@ -135,9 +134,9 @@
     </div>
     <div class="footer-bottom">
         <div class="container copyright">
-            <p>Copyright &copy; 2023 Trường Đức - Thiết bị điện thông minh. <a target='_blank'
+            <p>Copyright &copy; Nông Sản Việt <a target='_blank'
                     href='http://kythuatdientruongduc.com/'>Powered
-                    by Truong Duc</a>.</p>
+                    by Nong San Viet</a>.</p>
 
         </div>
     </div>

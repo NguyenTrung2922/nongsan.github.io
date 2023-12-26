@@ -34,14 +34,15 @@
                     <div style="margin-top: 50px">
                         @if ($newss)
                             @foreach ($newss as $new)
-                                <div class="article" style="margin-top: 5px">
+                                <div class="article row" style="width: 100%; padding: 5; margin: 0">
 
-                                    <div class="col-ld-3 col-md-3 col-sm-4 col-xs-4">
-                                        <a href="/tintuc/detail/{{ $new->id }}-{{ Str::slug($new->name, '-') }}.html"><img
-                                                src="{{ '/storage/' . $new->thumb }}" alt="{{ $new->name }}" /></a>
+                                    <div class="col-sm-3">
+                                        <a href="/tintuc/detail/{{ $new->id }}-{{ Str::slug($new->name, '-') }}.html">
+                                            <img src="{{ '/storage/' . $new->thumb }}" alt="{{ $new->name }}" style="width: 200%"/>
+                                        </a>
                                     </div>
 
-                                    <div class="post-content col-lg-9 col-md-9 col-sm-8 col-xs-8 ">
+                                    <div class="post-content col-sm-9">
                                         <a
                                             href="/tintuc/detail/{{ $new->id }}-{{ Str::slug($new->name, '-') }}.html">{{ $new->name }}</a><span
                                             class="date"> <i class="time-date"></i>{{ $new->date }}</span>
@@ -312,31 +313,31 @@
     <!--Begin: Bài viết mới nhất-->
 
     <!-- <div class="post_new" style="clear:both;">
-                                        <div class="container">
-                                            <div class="row">
-                                                <div class="title-line">
-                                                    <h3>Bài viết mới nhất</h3>
-                                                </div>
+                                            <div class="container">
+                                                <div class="row">
+                                                    <div class="title-line">
+                                                        <h3>Bài viết mới nhất</h3>
+                                                    </div>
 
-                                                @foreach ($newss as $new)
+                                                    @foreach ($newss as $new)
     <div class="col-xs-12 col-sm-6 col-md-3">
-                                                    <a href="/tintuc/detail/{{ $new->id }}-{{ Str::slug($new->name, '-') }}.html">
-                                                        <img class="url-img" src="{{ '/storage/' . $new->thumb }}" alt="{{ $new->name }}">
-                                                    </a>
-                                                    <a href="/tintuc/detail/{{ $new->id }}-{{ Str::slug($new->name, '-') }}.html" class="title_new_post">
-                                                        <h3>
-                                                            {{ $new->name }}
-                                                        </h3>
-                                                    </a>
-                                                    <p class="time_stamp">
-                                                        <i class="time-date"></i>{{ $new->date }}
-                                                    </p>
-                                                </div>
+                                                        <a href="/tintuc/detail/{{ $new->id }}-{{ Str::slug($new->name, '-') }}.html">
+                                                            <img class="url-img" src="{{ '/storage/' . $new->thumb }}" alt="{{ $new->name }}">
+                                                        </a>
+                                                        <a href="/tintuc/detail/{{ $new->id }}-{{ Str::slug($new->name, '-') }}.html" class="title_new_post">
+                                                            <h3>
+                                                                {{ $new->name }}
+                                                            </h3>
+                                                        </a>
+                                                        <p class="time_stamp">
+                                                            <i class="time-date"></i>{{ $new->date }}
+                                                        </p>
+                                                    </div>
     @endforeach
 
+                                                </div>
                                             </div>
-                                        </div>
-                                    </div> -->
+                                        </div> -->
 
     <!--End: Bài viết mới nhất-->
 
